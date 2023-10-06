@@ -10,6 +10,8 @@ manual_evaluation: false
 progressive_expectations: false
 choices: []
 goal:
-  kind: last_query_outputs
-  output: "'Buenas noches Pun Pun'"
+  kind: queries_match
+  regexps:
+  - ^saludar_a\s*\(\s*\"Juli\"\s*\,\s*18\s*\)\s*$
+  - ^saludar_a\s*\(\s*\"Pun Pun\"\s*\,\s*19\s*\)\s*$
 name: Hora de tomar una decisión
